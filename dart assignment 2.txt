@@ -1,0 +1,263 @@
+// Question 1:
+ANSWER:
+There are three  types of operators in Dart :
+1. Arithmetic operators   
+2.Relation operators    
+3. Logical operators.
+
+1) ARITHMETIC OPERATORS :
+
+Examples: 
+void main() {
+  var A = 12 ;
+  var B = 10 ;
+  var C = a + b ;    // Addition operator
+  var D = a - b ;    // Subtract operator
+  var E = a * b ;    // Multiplication operator
+  var F= a / b ;     // Division operator
+  var G = a ~/ b;   // Integar Division operator
+  var H = a % b ;    // Remainder operator
+  var I = a++ - b++ ;    // Increment operator
+  var J = --a + --b ;     // Decrement operator
+
+  print ("C = ${C}");
+  print ("D = ${D}");
+  print ("E = ${E}");
+  print ("F= ${F}");
+  print ("G = ${G}");
+  print ("H = ${H}");
+  print ("I = ${I}");
+  print ("J = ${J}");
+}
+
+2) RELATION OPERATORS:
+Eamples:
+void main() {
+  var a = 45;
+  var b = 20;
+  var c = a == b;   // Equal to operator
+  var d = a != b;   // Not Equal to operator
+  var e = a > b;   // Greater than operator
+  var f = a < b;    // Less than operator
+  var g = a >= b;   // Greater than Equal to operator
+  var h = a <= b;   // Less than Equal to operator
+
+  print ("c = ${c}");
+  print ("d = ${d}");
+  print ("e = ${e}");
+  print ("f = ${f}");
+  print ("g = ${g}");
+  print ("h = ${h}");
+}
+3) LOGICAL OPERATORS:
+Examples:
+void main() {
+  var a = 2;
+  var b = 6;
+  print (a > b && a < b);
+  print (a == b || a > b);
+  print (!(a > b && a < b));
+}
+
+// Question 2:
+ANSWER:
+void main() {
+  var a = 2 , b = 1;
+  var result = --a - --b + ++b + b--;
+  print (result);
+}
+
+// Question 3:
+ANSWER:
+void main() {
+  var cost_of_one_ticket = 600;
+  var cost_of_Five_ticket = cost_of_one_movie_ticket * 5;
+  print ("Cost of five tickets is ${cost_of_five_ticket}");
+}
+
+// Question 4:
+ANSWER:
+code:
+void main() {
+  var lst1 = [1, 2, 3, 4, 5, 6, 7];
+  var lst2 = [3, 5, 6, 7, 9, 10];
+  lst1.removeWhere((e) => lst2.contains(e));
+  print(lst1);
+}
+
+// Quesion 5:
+ANSWER:
+condition  for "?" 
+conisder two expression exp1 and   exp2:
+If condition is true, then the expression evaluates exp1 (and returns its value); otherwise, it evaluates and returns the value of exp2.
+
+condition for  "??"
+consider two exp1 and exp2:
+If expr1 is non-null, returns its value; otherwise, evaluates and returns the value of expr2
+
+
+
+// Question 6:
+ANSWERE:
+There are eight Data Types supported by dart :
+
+1. int   
+Example:
+void main() {
+int a = 8;
+print (a);
+}
+
+2. double    
+Example:
+void main() {
+double a = 12.6;
+ print (a);
+}
+
+3. num    
+Example:
+void main() {
+  num a = 11.5;
+  num b = 8;
+    print ("${a} and ${b}");
+}
+
+4. String    
+Example:
+void main() {
+ String name = "Nameera Rashid";
+ print(name);
+}
+
+5. var     
+Example:
+void main() {
+  var a = 7.8;
+  var b = 4;
+  print(a);
+  print(b);
+}
+
+6. Boolean    
+Example:
+void main() {
+  String name1 = "Nameera ";
+  String name2 = "Rashid";
+  bool result = (name1==name2);
+  print(result);
+}
+
+7. Lists     
+Example:
+void main() {
+  List colours = ["red","blue","pink","yellow"];
+  print (colours);
+  fruits [2] = "black";
+  print (colours);
+}
+
+8. Maps
+Example:
+void main() {
+  Map names = {1:"Ali", 2:"Yusra", 3:"Anus", 4:"Nameera", 5:"Rohail"};
+  print (names);
+  colors[6] = "Kanza";
+  print (names);
+}
+
+// Question 7:
+ANSWER:
+void main() { 
+   var array_a = [7, 14, 21, 28, 35, 42, 49, 56, 63, 70];
+   var array_b = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+   var result = Map.fromIterables(array_b, array_a);
+   print(result); 
+}
+
+
+// Question 8:
+ANSWER:
+void main() {
+  var pass1 = ["nameera123"];
+  var pass2 = ["nameera123"];
+  
+  if (pass2.isEmpty) {
+    print("Please enter your password"); 
+  }
+  
+  else if(pass1[0]==pass2[0]) {
+    print("Correct! The password you entered matches the original password");
+  }
+  
+  else if (pass1[0]!=pass2[0]) {
+    print("Incorrect password");
+  }
+
+}
+
+
+// Question 9:
+ANSWERE:
+void main(){
+  var student_name = ["Ben","Daniel","Bill"];
+  var score = [40, 80, 60];
+  var total_marks = 500;
+  double Ben_percentage = (score[0] * 100) / total_marks;
+  print ("Ben Score ${score[0]} and his Percentage is ${Ben_percentage}");
+  double Daniel_percentage = (score[1] * 100) / total_marks;
+  print ("Daniel Score ${score[1]} and his Percentage is ${Daniel_percentage}");
+  double Bill_percentage = (score[2] * 100) / total_marks;
+  print ("Bill Score ${score[2]} and his Percentage is ${Bill_percentage}");
+}
+
+// Question 10:
+ANSWERE:
+LEGAL VARIABLES:
+1) colour_name
+2) customer1
+3) chargePerUnit
+4) area1_city
+5) person2_name
+
+ILLEGAL VARIABLES:
+1) 12var
+2) person name
+3) #Abc
+4) 15 cities
+5) $@pple
+
+
+// Question 11:
+ANSWERE:
+code:
+void main() {
+  String city_name = 'Hyderabad';
+  String city_newname  = city_name.replaceRange(0, 5 ,"Islam"); 
+
+  print("Old  city Name was ${city_name}");
+  print("New city  name is ${city_newname}");
+}
+
+
+
+
+// Question 12:
+ANSWER:
+void main()
+{
+var custName = "Nameera Rashid";
+var currentMonth = "january";
+var units = 500;
+var chargePerUnit = 16.25;
+var netAmount = units *  chargePerUnit;
+var lateAmount = 850;
+var grossAmount = netAmount + lateAmount ;
+print("Customer Name: ${custName}");
+print("Current Month: ${currentMonth}");
+print("Number of UNits: ${units}");
+print("Charges Per Unit : ${chargePerUnit}");
+print("Net Amount Payeable (within Due Date): ${netAmount.toStringAsFixed(2)}");
+print("Late Payement  Surcharge : ${lateAmount}");
+print("Gross Amount Payeable (After Due Date): ${grossAmount.toStringAsFixed(2)}");
+}
